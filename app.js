@@ -9,7 +9,7 @@ dotenv.config();
 const port = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
-  res.send("hello");
+  res.json({ message: "QuizApi is working" });
 });
 app.use(express.json());
 

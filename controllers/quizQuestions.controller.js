@@ -15,5 +15,12 @@ const uploadQuizQuestion = async (req, res) => {
     console.log(err);
   }
 };
-
-export { uploadQuizQuestion };
+const getQuizQuestions = async (req, res) => {
+  try {
+    const allQuizQues = await quizQuestionModel.find();
+    return res.status(200).json(allQuizQues);
+  } catch (err) {
+    console.log(err);
+  }
+};
+export { uploadQuizQuestion, getQuizQuestions };
