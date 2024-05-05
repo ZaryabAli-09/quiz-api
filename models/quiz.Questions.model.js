@@ -27,6 +27,14 @@ const quizQuestionSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    category: {
+      type: String,
+      required: true,
+    },
+    difficulty: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
