@@ -8,27 +8,12 @@
   ],
   "routes": [
     {
+      "src": "/api/quiz/questions/(.*)",
+      "dest": "app.js"
+    },
+
+    {
       "src": "/(.*)",
-      "dest": "app.js"
-    },
-    {
-      "src": "/api",
-      "dest": "app.js"
-    },
-    {
-      "src": "/api/quiz",
-      "dest": "app.js"
-    },
-    {
-      "src": "/api/quiz/questions",
-      "dest": "app.js"
-    },
-    {
-      "src": "/api/quiz/questions/get",
-      "dest": "app.js"
-    },
-    {
-      "src": "/api/quiz/questions/upload",
       "dest": "app.js"
     }
   ]
