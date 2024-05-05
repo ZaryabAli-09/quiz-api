@@ -1,20 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "/app.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
   "routes": [
     {
-      "src": "/api/quiz/questions/(.*)",
-      "dest": "app.js"
-    },
-
-    {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "/"
     }
   ]
 }
