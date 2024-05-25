@@ -47,3 +47,5 @@ const dbConnection = async () => {
     console.log(err, "db not connected");
   }
 };
+
+export default app;
